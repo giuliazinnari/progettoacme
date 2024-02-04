@@ -7,4 +7,4 @@
 - Realizzazione di un sito web monopagina come brand identity
   
 ## Indirizzo di pubblicazione Netifly 
-[giuliazinnari-brandidentity.netlify.app](giuliazinnari-brandidentity.netlify.app)
+[giuliazinnari-brandidentity.netlify.app] (giuliazinnari-brandidentity.netlify.app)
