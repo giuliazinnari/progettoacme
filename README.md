@@ -4,4 +4,4 @@
 - Corso Web Design
 - Professore Baccan Matteo
 - Anno Accademico 2023 2024
-- Realizzazione di un sito web monopagina come brand identidy 
+- Realizzazione di un sito web monopagina come brand identity 
