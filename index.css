@@ -1,17 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .myheader {
     background-color:rgb(250, 246, 246);
     text-align: center;
   }
   .myheader a {
-    padding: 20px;
+    padding: 2%;
   }
   .mybody{
+    
     background-color:rgb(211, 164, 224);
     padding-left: 200px;
     padding-right: 200px;
   }
   .myfooter{
-    background-color:rgb(103, 4, 169);
+    background-color:rgb(252, 251, 251);
+    text-align: center;
+    padding: 2%; 
+    justify-content: center;
+    width: 100%;
   }
+
+#foto {
+  max-width: 400px;
+  height: auto;
+}
+#form {
+  font-family: 'Roboto', sans-serif;
+}
+
 
   
