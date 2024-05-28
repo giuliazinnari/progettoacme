@@ -9,15 +9,14 @@
   .mybody{
     
     background-color:rgb(211, 164, 224);
-    padding-left: 200px;
-    padding-right: 200px;
+    padding: 10%
   }
   .myfooter{
     background-color:rgb(252, 251, 251);
     text-align: center;
-    padding: 2%; 
+    padding: 0%;
     justify-content: center;
-    width: 100%;
+    max-width: auto;
   }
 
 #foto {
