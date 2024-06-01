@@ -1,16 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  background: linear-gradient(315deg, rgb(0, 255, 4), purple);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+} 
+
 .myheader {
-    background-color:rgb(250, 246, 246);
-    text-align: center;
-  }
-  .myheader a {
-    padding: 2%;
-  }
-  .mybody{
-    
-    background-color:rgb(211, 164, 224);
-    padding: 10%
-  }
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+/* Stile per l'immagine nel header */
+.myheader img {
+  width: 50px;
+  height: auto;
+  margin-right: 10%;
+}
+
+/* Stile per il contenitore della navigazione */
+.nav-container {
+  display: flex;
+  gap: 10px; /* Aggiunge spazio tra i pulsanti */
+}
+
+/* Stile per i pulsanti */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  white-space: nowrap; /* Impedisce al testo di andare a capo */
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+}
+.aboutme{
+  text-align: justify;
+  padding: 20px;
+}
   .myfooter{
     background-color:rgb(252, 251, 251);
     text-align: center;
@@ -25,7 +53,12 @@
 }
 #form {
   font-family: 'Roboto', sans-serif;
-}
+  font-size: 20px;
 
+}
+.info{display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
 
   
