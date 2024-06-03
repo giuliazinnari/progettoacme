@@ -61,5 +61,11 @@ body {
   flex-direction: row;
   gap: 60px;
 }
+.info h1{
+  color: rgb(115, 63, 0);
+}
  
-#Fashionprojects
+.fashion {display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
