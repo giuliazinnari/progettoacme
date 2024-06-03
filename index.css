@@ -37,7 +37,7 @@ body {
   cursor: pointer;
 }
 .aboutme{
-  text-align:center;
+  text-align: justify;
   padding: 20px;
 }
   .myfooter{
@@ -62,22 +62,25 @@ body {
 .info{display: flex;
   flex-direction: row;
   gap: 60px;
+  background-color: rgb(251, 237, 249);
+
+
   
 }
 .info h1{
-  color: rgb(2, 2, 2);
+  color: rgb(0, 0, 0);
 }
-.infocolonna{
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
+
 .containerfashion{
   display: flex;
   flex-direction: column;
   gap: 60px;
+  padding: 20px;
 }
 .fashion {display: flex;
   flex-direction: row;
   gap: 60px;
+}
+#fashionprojects {
+  margin-left: 20px;
 }
