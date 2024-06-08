@@ -1,53 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('fonts/OpenSans-Regular.ttf') format('truetype'); ('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-  background: linear-gradient(315deg, rgb(232, 235, 192), rgb(255, 255, 255));
+  background:white
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 } 
-
 .myheader {
   display: flex;
   justify-content:center;
   align-items: center;
   background-color: rgb(253, 253, 253);
-  padding: 10px;
+  padding: 40px;
 }
-
 /* Stile per l'immagine nel header */
 .myheader img {
   width: 50px;
   height: auto;
   margin-right: 10%;
-
 }
-
 /* Stile per il contenitore della navigazione */
 .nav-container {
   display: flex;
   gap: 10px; /* Aggiunge spazio tra i pulsanti */
 }
-
 /* Stile per i pulsanti */
 .btn {
   padding: 10px 20px;
   font-size: 16px;
   white-space: nowrap; /* Impedisce al testo di andare a capo */
-  background-color: #e7ef72;
+  background-color: #ffffff;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s; /* Aggiunge una transizione per l'effetto hover */
 }
-.aboutme{
-  text-align: justify;
+.btn:hover {
+  text-decoration: underline;
+}
+.aboutme {
+  text-align: center;
+  background-color: black;
+  color: white; /* Modifica il colore del testo */
   padding: 20px;
+  margin: 0; /* Rimuove i margini */
 }
-  .myfooter{
-    background-color:rgb(251, 251, 251);
-    text-align: center;
-    padding: 0%;
-    justify-content: center;
-    max-width: auto;
-  }
-
+.myfooter {
+  background-color: rgb(251, 251, 251);
+  text-align: center;
+  padding: 0%;
+  justify-content: center;
+  max-width: auto;
+}
 #foto {
   max-width: 400px;
   height: auto;
@@ -56,31 +58,64 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: center;
-  background-color:rgb(251, 237, 249);
-
+  background-color: rgb(251, 237, 249);
+  max-width: auto;
+  padding: 20px; 
 }
-.info{display: flex;
+#form h1{
+   font-size: 15px; 
+  color: rgba(142, 85, 133, 0.556);}
+
+   #form h3{ 
+    font-size: 35px; 
+  }
+.info {
+  display: flex;
   flex-direction: row;
   gap: 60px;
-  background-color: rgb(251, 237, 249);
-
-
-  
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 13px;
+  text-align: center
 }
-.info h1{
-  color: rgb(0, 0, 0);
+.info h1 {
+  color: rgb(252, 252, 252);
 }
-
-.containerfashion{
+.containerfashion {
   display: flex;
   flex-direction: column;
   gap: 60px;
   padding: 20px;
 }
-.fashion {display: flex;
+.fashion {
+  display: flex;
   flex-direction: row;
   gap: 60px;
 }
 #fashionprojects {
   margin-left: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn {
+    width: 100%;
+  }
+  .containerfashion {
+    padding: 10px;
+  }
+
+  .fashion {
+    flex-basis: 100%;
+  }
+
+  #foto {
+    width: auto;
+    max-width: 400px;
+    height: auto;
+  }
 }
