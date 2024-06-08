@@ -117,10 +117,11 @@ body {
     align-items: center; /* Centra le immagini */
   }
 
-  #foto C
+  #foto {
     width: 100%; /* Fai sì che le immagini della moda si adattino alla larghezza del loro contenitore */
     height: auto; /* Fai sì che le immagini della moda si adattino alle dimensioni della loro larghezza */
     margin-bottom: 10px; /* Aggiungi spazio inferiore tra le immagini */
+    
   } 
   .myfooter {
     background-color: rgb(251, 251, 251);
