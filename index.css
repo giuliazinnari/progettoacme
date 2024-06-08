@@ -97,25 +97,58 @@ body {
   margin-left: 20px;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .nav-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
+
   .btn {
     width: 100%;
+    margin-bottom: 10px; /* Aggiungi margine tra i pulsanti */
   }
+
   .containerfashion {
     padding: 10px;
   }
 
   .fashion {
-    flex-basis: 100%;
+    flex-direction: column; /* Mostra le immagini della moda in una colonna */
+    align-items: center; /* Centra le immagini */
   }
 
-  #foto {
-    width: auto;
-    max-width: 400px;
+  #foto C
+    width: 100%; /* Fai sì che le immagini della moda si adattino alla larghezza del loro contenitore */
+    height: auto; /* Fai sì che le immagini della moda si adattino alle dimensioni della loro larghezza */
+    margin-bottom: 10px; /* Aggiungi spazio inferiore tra le immagini */
+  } 
+  .myfooter {
+    background-color: rgb(251, 251, 251);
+    text-align: center;
+    height: auto;
+  }
+  .info {
+    flex-direction: column;
+    align-items: center;    
+    gap: 10px;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center
+  }
+  .info h1 {
+    color: rgb(252, 252, 252);
+    font-size: 20px; 
+    flex-direction: column; 
+    align-items: center;
+  
+    #form h3 {
+      font-size: 25px; /* Riduci la dimensione del testo per schermi più piccoli */
+      margin-bottom: 10px; /* Aggiungi spazio inferiore */
+  }
+
+  #map {
+    width: 100%;
     height: auto;
   }
 }
+
