@@ -26,11 +26,32 @@
     In questi anni universitari ho sviluppato e lavorato sulla mia creatività, ho appreso competenze tecniche come la modellistica, la sartoria e il disegno. Ho anche acquisito nozioni sulla qualità e ricerca dei materiali e ho ampliato le mie conoscenze digitali: Photoshop, Illustrator, Indesign, Blender e Github. 
     Qui potete trovare tutti miei ultimi lavori sempre aggiornati. </p>
     </div>
+
+    <span class="button" onclick="popup2()">SCOPRI DI PIU</span>
+
+    <div id="popup2" style="display: none;">
+        <!-- X di chiusura -->
+        <span style="float: right; cursor: pointer;" onclick="popup2()">X</span>
+        <h1>Grazie!</h1>
+        <p>ma devo ancora decidere cosa scrivere..</p>
+    </div>
+    
+    <script>
+        function popup2() {
+            var popup2 = document.getElementById("popup2");
+            if (popup2.style.display == "block") {
+                popup2.style.display = "none";
+            } else {
+                popup2.style.display = "block";
+            }
+        }
+    </script>
     
   <div id="fashionprojects">
     <h1>Fashion Projects </h1>
 
-    
+
+
     <div class="containerfashion">
       <div class="fashion">
         <img src="carte.png" id="foto">
@@ -123,7 +144,7 @@
 
   <div class="myfooter"> 
     <footer>
-
+      <img src="/img/progetto shooting  (1).pdf.png" id="logofooter" alt="Logofooter" class="logofooter">
     <p>&copy; 2024 Giulia Zinnari Tutti i diritti riservati.</p>
     <p><a href="mailto:giuly.zinnari@libero.it ">Contacts </a> | <a href="#">Privacy Policy</a></p>
 </footer>
