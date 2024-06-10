@@ -139,7 +139,10 @@ body {
     padding: 5px;
     border-color:rgb(167, 43, 167)    
     }
-
+#progetto {
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -191,10 +194,11 @@ body {
     width: 80%;
     height: auto;
     margin-right: 5%;
+    border-radius: 25px;
   }
   #fname {background-color: #fff;
     padding: 5px;
-    width: 80%;
+    width: 50%;
     border-radius: 5px;
     font-size: 15px;
     position:static;
@@ -203,7 +207,6 @@ body {
     #fname:hover { background-color:rgb(167, 43, 167);
       color: #fff;
       padding: 5px;
-      width: auto;
       border-radius: 5px;
       font-size: 15px;
       position:static;
