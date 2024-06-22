@@ -7,21 +7,23 @@ body {
 } 
 .myheader {
   display: flex;
-  justify-content:center;
-  align-items: center;
+  justify-content:left;
+  align-items: left;
   background-color: rgb(253, 253, 253);
   padding: 40px;
 }
 /* Stile per l'immagine nel header */
 .myheader img {
-  width: 50px;
+  width: 200px;
   height: auto;
   margin-right: 10%;
 }
 /* Stile per il contenitore della navigazione */
 .nav-container {
   display: flex;
-  gap: 10px; /* Aggiunge spazio tra i pulsanti */
+  gap: 50px; /* Aggiunge spazio tra i pulsanti */
+  align-items: center;
+  margin-left: 180px;
 }
 /* Stile per i pulsanti */
 .btn {
@@ -37,11 +39,27 @@ body {
   text-decoration: underline;
 }
 .aboutme {
-  text-align: center;
+  text-align: left;
   background-color: black;
   color: white; /* Modifica il colore del testo */
-  padding: 30px;
-  margin: 40; /* Rimuove i margini */
+  padding: 150px;
+ 
+}
+.aboutme h1
+{
+  font-size: 50px;
+  text-align: left;
+ 
+}
+.aboutme img 
+{
+width: 500px;
+height: auto;
+margin:50px;
+flex-direction: column;
+align-items: center;
+
+
 }
 
 .myfooter {
@@ -52,10 +70,13 @@ body {
   font-family:'Roboto', sans-serif;
   font-size: 10px;
 }
+
 #foto {
-  max-width: 400px;
-  height: auto;
-}
+  width: 100%; /* Fai sì che le immagini della moda si adattino alla larghezza del loro contenitore */
+  height: auto; /* Fai sì che le immagini della moda si adattino alle dimensioni della loro larghezza */
+  margin-bottom: 10px; /* Aggiungi spazio inferiore tra le immagini */
+  
+} 
 #form {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -79,7 +100,9 @@ body {
   color: white;
   padding: 20px;
   font-size: 13px;
-  text-align: center
+  text-align: center;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 .info p {
   color: rgb(252, 252, 252);
@@ -88,6 +111,17 @@ body {
 .info h1 {
   color: rgb(252, 252, 252);
   font-family:'Roboto', sans-serif;
+}
+.contattami {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  flex-direction: row;
+  margin-right: 20px;
+  
 }
 .containerfashion {
   display: flex;
@@ -107,7 +141,7 @@ body {
 
 #fname {background-color: #fff;
   padding: 10px;
-  width: 20%;
+  width: 200px;
   border-radius: 5px;
   font-size: 15px;
   position:static;
@@ -116,7 +150,7 @@ body {
   #fname:hover { background-color:rgb(167, 43, 167);
     color: #fff;
     padding: 10px;
-    width: 20%;
+    width: 200px;
     border-radius: 5px;
     font-size: 15px;
     position:static;
@@ -126,17 +160,18 @@ body {
  border-radius: 5px;
   font-size: 15px;
   position:static;    
-  width: 10%; 
-  padding: 5px;
+  width: 100px; 
+  padding: 10px;
   border-color:rgb(167, 43, 167)
+
   }
   #submit:hover { background-color:rgb(167, 43, 167);
     color: #fff;
     border-radius: 5px;
     font-size: 15px;
     position:static;  
-    width: 10%; 
-    padding: 5px;
+    width: 100px; 
+    padding: 10px;
     border-color:rgb(167, 43, 167)    
     }
 #progetto {
@@ -148,39 +183,213 @@ body {
   height: auto;
   margin-right: 5%;
   border-radius: 25px;
+  align-items: flex-end;
 }
 @media only screen and (max-width: 768px) {
   .nav-container {
     flex-direction: column;
     align-items: center;
+    display: flex;
+  }
+  .myheader img {
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: justify;
+    width: 50%;
+    height: auto;
+  }
+  .myheader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    justify-content:center;
+    font-family:'Roboto', sans-serif;
+    font-size: 10px;
+  }
+  .btn {
+    margin-bottom: 10px; /* Aggiungi margine tra i pulsanti */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    height: auto;
+    padding: 10px; /* Padding interno per i pulsanti */
+    text-align: center; /* Alinea i pulsanti al centro */
+    flex-direction: column;
+    display: flex;
+    
+    gap: 10px;
+  }
+  .btn:hover {
+    background-color: rgb(167, 43, 167);
+    color: #fff;
+    border-radius: 10px;
+  }
+  .aboutme img {
+    width: 100%; /* Fai sì che le immagini occupino tutto lo spazio disponibile */
+    height: auto;
+    margin-bottom: 10px;
   }
 
-  .btn {
-    width: 100%;
-    margin-bottom: 10px; /* Aggiungi margine tra i pulsanti */
+  .aboutme {
+    flex-direction: row;
+    align-items: left;
+    
+  }
+  .aboutme h1 {
+    margin-bottom: 10px;
+  }
+  .aboutme p {
+  margin-bottom: 20px;
+  text-align: left;
+  margin: 20px;
+
   }
 
   .containerfashion {
     padding: 10px;
   }
-
+  .progetto {
+    order: -1; /* Porta il testo sopra l'immagine */
+    text-align: center; /* Centra il testo del progetto */
+  }
   .fashion {
     flex-direction: column; /* Mostra le immagini della moda in una colonna */
     align-items: center; /* Centra le immagini */
   }
-
   #foto {
     width: 100%; /* Fai sì che le immagini della moda si adattino alla larghezza del loro contenitore */
     height: auto; /* Fai sì che le immagini della moda si adattino alle dimensioni della loro larghezza */
     margin-bottom: 10px; /* Aggiungi spazio inferiore tra le immagini */
-    
-  } 
-  .myfooter {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    height: auto;
+
   }
-  .info {
+
+.myfooter {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  height: auto;
+}
+.info {
+  flex-direction: column;
+  align-items: center;    
+  gap: 10px;
+  padding: 10px;
+  font-size: 10px;
+  text-align: center
+}
+.info h1 {
+  color: rgb(252, 252, 252);
+  font-size: 20px; 
+  flex-direction: column; 
+  align-items: center;
+  
+}
+
+#map {
+  width: 80%;
+  height: auto;
+  margin-right: 5%;
+  border-radius: 25px;
+
+}
+
+  #fname {background-color: #fff;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 15px;
+    position:static;
+    border-color:rgb(167, 43, 167)
+    }
+    #fname:hover { background-color:rgb(167, 43, 167);
+      color: #fff;
+      padding: 10px;
+      width: 200px;
+      border-radius: 5px;
+      font-size: 15px;
+      position:static;
+      border-color:rgb(167, 43, 167)
+      }
+  #submit {background-color: #fff;
+   border-radius: 5px;
+    font-size: 15px;
+    position:static;    
+    width: 100px; 
+    padding: 10px;
+    border-color:rgb(167, 43, 167)
+  
+    }
+    #submit:hover { background-color:rgb(167, 43, 167);
+      color: #fff;
+      border-radius: 5px;
+      font-size: 15px;
+      position:static;  
+      width: 100px; 
+      padding: 10px;
+      border-color:rgb(167, 43, 167)    
+}
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .popup {
+      display: none; /* Nascondi il popup per impostazione predefinita */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+      color: white /*testo bianco*/;
+      justify-content: center;
+      align-items: center;
+      font-family:'Roboto', sans-serif;
+      font-size: 10px;
+      text-align: center;
+    }
+    .popup-content {
+      background-color: rgb(9, 9, 9);
+      color:white;
+      padding: 20px;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+      
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    /* Stile per schermi grandi */
+
+    #newsletterform {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: j;
+    }
+    /* Stile per schermi piccoli */
+    @media only screen and (max-width: 600px) {
+      .popup {
+       max-width: 600px;
+      }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .info {
     flex-direction: column;
     align-items: center;    
     gap: 10px;
@@ -195,120 +404,6 @@ body {
     align-items: center;
     
   }
-  
-  #map {
-    width: 80%;
-    height: auto;
-    margin-right: 5%;
-    border-radius: 25px;
-  }
-  #fname {background-color: #fff;
-    padding: 5px;
-    width: 50%;
-    border-radius: 5px;
-    font-size: 15px;
-    position:static;
-    border-color:rgb(167, 43, 167)
-    }
-    #fname:hover { background-color:rgb(167, 43, 167);
-      color: #fff;
-      padding: 5px;
-      border-radius: 5px;
-      font-size: 15px;
-      position:static;
-      border-color:rgb(167, 43, 167)
-      }
-  #submit {background-color: #fff;
-   border-radius: 5px;
-    font-size: 15px;
-    position:static;  
-    width: auto; 
-    padding: 5%;
-    border-color:rgb(167, 43, 167)
-    }
-    #submit:hover { background-color:rgb(167, 43, 167);
-      color: #fffefe;
-      border-radius: 5px;
-      font-size: 15px;
-      position:static;   
-      width: auto; 
-      padding: 5%;
-      border-color:rgb(167, 43, 167)
-      }
-}
-    .popup {
-      display: none; /* Nascondi il popup per impostazione predefinita */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
-      color: white /*testo bianco*/;
-      justify-content: center;
-      align-items: center;
-      font-family:'Roboto', sans-serif;
-    }
-    .popup-content {
-      background-color: rgb(9, 9, 9);
-      color:white;
-      padding: 20px;
-      border-radius: 5px;
-      width: 80%;
-      max-width: 400px;
-      text-align: center;
-      position: relative;
-    }
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    /* Stile per schermi grandi */
-    @media only screen and (min-width: 601px) {
-    
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    }
-    #newsletterform {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      text-align: j;
-    }
-    /* Stile per schermi piccoli */
-    @media only screen and (max-width: 600px) {
-      .popup-content {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        direction: column;
-        align-items: center;
-        flex-direction: column;  
-        gap: 10px;
-        padding: 10px;
-        font-size: 10px;
-       text-align: center;
- 
-      }
-    
-      .popup {
-       max-width: 600px;
-      }
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 20px;
-      cursor: pointer;
-    }
   }
   #popup:hover { background-color:rgb(167, 43, 167);
     
@@ -338,10 +433,88 @@ body {
     color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+    height: 40%;
+    width: 40%;
 }
+
+
 #logofooter {
   width: 100px;
   height: auto;
-  margin-block-end: 1%;
-  
+}
+
+.social {
+  display: flex;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    flex-direction: row;
+    margin-right: 20px;
+}
+#seguimi {
+  display: flex;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    flex-direction: row;
+}
+
+.social a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social a:hover {
+  color: #ddd; /* Cambia il colore al passaggio del mouse se desideri */
+}
+
+/* Media Query per schermi di dimensioni più piccole */
+@media only screen and (max-width: 600px) {
+  /* Modifica la dimensione del testo nell'intestazione per schermi più piccoli */
+  #seguimi h1 {
+      font-size: 20px;
+      text-align: justify;
+  }
+
+  /* Modifica la disposizione delle icone per schermi più piccoli */
+  .social {
+      flex-direction: column; /* Disposizione in colonna per schermi piccoli */
+      gap: 20px; /* Riduce il gap tra le icone */
+      align-items: justify; /* Centra le icone */
+  }
+
+  /* Modifica la dimensione delle icone per schermi più piccoli */
+  .social a {
+      font-size: 20px; /* Riduce la dimensione delle icone */
+      align-items: justify; /* Centra le icone */
+  }
+}
+
+#foto {
+  max-width: auto;
+  height: auto;
+}
+.contenitore-foto {
+  position: relative; /* Assicura che l'elemento contenitore abbia una posizione definita */
+  overflow: hidden; /* Nasconde eventuali overflow di contenuti interni */
+  margin-bottom: 20px; /* Aggiunge spazio inferiore tra le immagini */
+}
+
+.contenitore-foto img {
+  display: block; /* Garantisce che l'immagine sia un blocco */
+  width: 100%; /* Assicura che l'immagine riempia completamente il contenitore */
+  height: auto; /* Altezza automatica rispetto alla larghezza per mantenere l'aspetto proporzionato */
+  transition: transform 0.3s ease; /* Transizione fluida per l'effetto hover */
+}
+
+.contenitore-foto:hover img {
+  transform: scale(1.1); /* Aumenta le dimensioni dell'immagine al passaggio del mouse */
 }
