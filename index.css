@@ -236,6 +236,7 @@ body {
     border-radius: 10px;
   }
   .aboutme img {
+    max: width 400px; ;
     width: 100%; /* Fai sì che le immagini occupino tutto lo spazio disponibile */
     height: auto;
     margin-bottom: 10px;
@@ -257,7 +258,7 @@ body {
     font-family:'Roboto', sans-serif;
     font-size: 10px;
     margin-top: 10px;
-    padding right: 10px;
+    padding-right: 10px;
     width: 100%;
     height: auto;
     display: flex;
@@ -530,7 +531,8 @@ body {
 }
 
 #foto {
-  max-width: auto;
+  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .contenitore-foto {
@@ -540,7 +542,7 @@ body {
 }
 
 .contenitore-foto img {
-  display: block; /* Garantisce che l'immagine sia un blocco */
+  display: flex; /* Garantisce che l'immagine sia un blocco */
   width: 100%; /* Assicura che l'immagine riempia completamente il contenitore */
   height: auto; /* Altezza automatica rispetto alla larghezza per mantenere l'aspetto proporzionato */
   transition: transform 0.3s ease; /* Transizione fluida per l'effetto hover */
