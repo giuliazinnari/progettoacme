@@ -247,9 +247,6 @@ body {
     flex-direction: column;
     display: flex;
     gap: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
   }
 
   .aboutme {
@@ -265,8 +262,7 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    margin-right: 20px;
-    
+
   }
   .aboutme h1 {
     margin-bottom: 10px;
