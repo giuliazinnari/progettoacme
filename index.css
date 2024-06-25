@@ -481,6 +481,10 @@ body {
     width: 40%;
 }
 
+.button {
+  margin-left: 10px;
+    margin-right: 10px;
+  }
 
 #logofooter {
   width: 100px;
