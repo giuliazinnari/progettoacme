@@ -543,6 +543,19 @@ body {
       font-size: 20px; /* Riduce la dimensione delle icone */
       align-items: justify; /* Centra le icone */
   }
+  #iscriviti {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fbfbfb;
+    color: rgb(1, 1, 1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #iscriviti:hover {
+    background-color:rgb(167, 43, 167);
+    color:#ddd;
+  }
 }
 
 #foto {
