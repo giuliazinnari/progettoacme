@@ -15,12 +15,13 @@
   <header class="myheader">
     <img src="/img/GIULIA ZINNARI (2).png" alt="Logo" class="logo">
     <div class="nav-container">
-        <button type="button" class="btn">About me</button>
-        <button type="button" class="btn">Fashion projects</button>
-        <button type="button" class="btn">Contacts</button>
+        <button type="button" class="btn" onclick="scrollToSection('about-me')">About me</button>
+        <button type="button" class="btn" onclick="scrollToSection('fashion-projects')">Fashion projects</button>
+        <button type="button" class="btn" onclick="scrollToSection('contacts')">Contacts</button>
     </div>
 </header>
 <div class="aboutme">
+  <div id="about-me" class="section"></div>
   <img src="/img/image.png" alt="aboutme"> 
 
   <div class="title">
@@ -52,6 +53,7 @@
     </script>
     
   <div id="fashionprojects">
+  <div id="fashion-projects" class="section"></div>
     <h1>Fashion Projects </h1>
 
 
@@ -109,6 +111,7 @@
       </div>
     </div>
   </div>
+</div>
 <pre>
 <div id="form">
 <form action="/action.php" target="_blank">
@@ -140,6 +143,8 @@
   </div>
 </div>
 <div class="info">
+  <div id="contacts" class="section"> 
+  </div>
   <div>
     <h1>DOVE TROVARMI </h1>
   <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44780.69251681886!2d8.574581405615781!3d45.45382159461326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47865a204242336d%3A0x4d210e35fa2980f0!2s28100%20Novara%20NO!5e0!3m2!1sit!2sit!4v1716819509013!5m2!1sit!2sit" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -162,9 +167,16 @@
 
  <div class="Contattami">
   <h1>CONTATTAMI</h1>
-   <p>Email giuly.zinnari@libero.it  </p><p>Telefono 3333333333 </p>
+  <i class="fa-solid fa-envelope" style="color: #ffffff;" ></i>
+  <p>giuly.zinnari@libero.it</p>
+
+  <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+  <p> 335 456 7890</p>
+
+
   </div>
   </div>
+</div>
 </div>
 
   <div class="myfooter"> 
