@@ -267,6 +267,8 @@ body {
     height: auto;
     display: flex;
     gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     
   }
   .aboutme h1 {
@@ -281,8 +283,6 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 20px;
-  
-
   }
 
   .containerfashion {
