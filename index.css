@@ -12,14 +12,15 @@ body {
   justify-content: left;
   align-items: left;
   background-color: rgb(253, 253, 253);
-  padding: 40px;
+  padding: 15px;
 }
 
 /* Stile per l'immagine nel header */
 .myheader img {
-  width: 200px;
+  width: 50px;
   height: auto;
-  margin-right: 10%;
+  margin-right: 20%;
+  margin-left: 20px;
 }
 
 /* Stile per il contenitore della navigazione */
@@ -258,48 +259,29 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: left;
-    display: flex;
-    gap: 10px;
-    margin: 20px;
-    font-size: 10px;
-    text-align: left;
+  @media only screen and (max-width: 768px) {
+    .myheader {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .myheader img {
+      margin: 0; /* Rimuovi margini precedenti */
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-left: 0; /* Rimuovi il margin-left precedentemente impostato */
+    }
+  
+    .btn {
+      width: 100%; /* Occupa tutta la larghezza disponibile */
+    }
   }
-
-  .myheader img {
-    margin-bottom: 10px;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    height: auto;
-  }
-
-  .myheader {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-  }
-
-  .btn {
-    margin-bottom: 10px;
-    /* Aggiungi margine tra i pulsanti */
-    width: 180px;
-    /* Occupa tutta la larghezza disponibile */
-    height: auto;
-    padding: 10px;
-    /* Padding interno per i pulsanti */
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    gap: 10px;
-
-  }
+  
 
   .btn:hover {
     background-color: rgb(167, 43, 167);
@@ -776,9 +758,9 @@ img {vertical-align: middle;}
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 20px;
   margin-top: -22px;
-  color: rgb(255, 0, 0);
+  color: rgb(239, 215, 129);
   font-weight: bold;
   font-size: 38px;
   transition: 0.6s ease;
