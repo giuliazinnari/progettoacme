@@ -306,6 +306,7 @@ color: rgb(218, 217, 217);
     .btn {
       width: 70%; /* Occupa tutta la larghezza disponibile */
       padding: 10px;
+      color: inherit; /* Usa il colore del testo circostante */
     }
   }
   
