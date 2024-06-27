@@ -21,6 +21,32 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per separare visivamente l'header dal contenuto */
 }
 
+  
+.row {
+  display: flex;
+  justify-content: space-between; /* Distribuisce gli elementi lungo la riga */
+  gap: 20px; /* Spazio tra le caselle */
+  overflow-x: auto; /* Per gestire lo scrolling orizzontale se le immagini superano la larghezza del contenitore */
+}
+
+.box {
+  flex: 0 0 auto; /* Impedisce alle caselle di allungarsi */
+  width: 30%; /* Larghezza della casella */
+  padding: 10px; /* Spazio interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra */
+  background-color: #f0f0f0; /* Colore di sfondo */
+  text-align: center; /* Centra l'immagine orizzontalmente */
+}
+
+.box img {
+  max-width: 100%; /* Massima larghezza per l'immagine */
+  height: auto; /* Altezza automatica */
+  display: block; /* Rimuove lo spazio extra sotto l'immagine */
+  margin: 0 auto; /* Centra l'immagine all'interno della casella */
+}
+
+
+
 
 /* Stile per l'immagine nel header */
 .myheader img {
@@ -108,15 +134,7 @@ body {
   
 }
 
-#foto {
-  width: 100%;
-  /* Fai sì che le immagini della moda si adattino alla larghezza del loro contenitore */
-  height: auto;
-  /* Fai sì che le immagini della moda si adattino alle dimensioni della loro larghezza */
-  margin-bottom: 10px;
-  /* Aggiungi spazio inferiore tra le immagini */
 
-}
 
 #form {
   display: flex;
@@ -209,6 +227,8 @@ color: rgb(218, 217, 217);
   padding: 20px;
 }
 
+
+
 .containerfashion {
   display: flex;
   flex-direction: column;
@@ -271,9 +291,13 @@ color: rgb(218, 217, 217);
   border-color: rgb(218, 217, 217);
 }
 
-#progetto {
+.progetto {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  
 }
 
 #map {
@@ -733,8 +757,11 @@ color: rgb(218, 217, 217);
   width: 100%;
   max-width: 100%;
   height: auto;
+  margin-bottom: 10px;
+  flex-direction: row;
   }
-
+  
+  
   
 
 .contenitore-foto {
