@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   const popup = document.getElementById('newsletterPopup');
   const closeBtn = document.querySelector('.close-btn');
-  const form = document.getElementById('newsletterForm');
+  const form = document.getElementById('newsletterform');
 
   // Funzione per mostrare il popup
   function showPopup() {
