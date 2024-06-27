@@ -17,38 +17,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Assicura che l'header rimanga sopra altri contenuti */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per separare visivamente l'header dal contenuto */
+  z-index: 1000;
+  /* Assicura che l'header rimanga sopra altri contenuti */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Aggiunge un'ombra per separare visivamente l'header dal contenuto */
 }
 
-  
-.row {
-  display: flex;
-  justify-content: space-between; /* Distribuisce gli elementi lungo la riga */
-  gap: 20px; /* Spazio tra le caselle */
-  overflow-x: auto; /* Per gestire lo scrolling orizzontale se le immagini superano la larghezza del contenitore */
-}
-
-.box {
-  flex: 0 0 auto; /* Impedisce alle caselle di allungarsi */
-  width: 30%; /* Larghezza della casella */
-  padding: 10px; /* Spazio interno */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombra */
-  background-color: #f0f0f0; /* Colore di sfondo */
-  text-align: center; /* Centra l'immagine orizzontalmente */
-}
-
-.box img {
-  max-width: 100%; /* Massima larghezza per l'immagine */
-  height: auto; /* Altezza automatica */
-  display: block; /* Rimuove lo spazio extra sotto l'immagine */
-  margin: 0 auto; /* Centra l'immagine all'interno della casella */
-}
-
-
-
-
-/* Stile per l'immagine nel header */
 .myheader img {
   width: 50px;
   height: auto;
@@ -56,7 +30,6 @@ body {
   margin-left: 20px;
 }
 
-/* Stile per il contenitore della navigazione */
 .nav-container {
   display: flex;
   gap: 50px;
@@ -96,9 +69,57 @@ body {
   padding: 150px;
 }
 
+.aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  /* Modifica il colore del testo */
+  height: 100vh;
+  /* per centrare verticalmente */
+  padding: 150px;
+}
+
 .aboutme img {
   width: 500px;
   height: auto;
+}
+
+.aboutme p {
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* Stile per l'immagine nel header */
+/* Stile per il contenitore della navigazione */
+.nav-container {
+  display: flex;
+  gap: 50px;
+  /* Aggiunge spazio tra i pulsanti */
+  align-items: center;
+  margin-left: 180px;
+}
+
+/* Stile per i pulsanti */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  white-space: nowrap;
+  /* Impedisce al testo di andare a capo */
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* Aggiunge una transizione per l'effetto hover */
+}
+
+.btn:hover {
+  text-decoration: underline;
 }
 
 .title {
@@ -109,11 +130,83 @@ body {
 
 }
 
-.aboutme p {
-  font-size: 20px;
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #010101;
+  color: white;
+  cursor: pointer;
 
+  font-size: 10px;
+}
+
+.button:hover {
+  background-color: rgb(218, 217, 217);
+}
+
+#popup2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #040404;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 3%;
+  height: 40%;
+  width: 40%;
+}
+
+.button {
+  margin-right: 10px;
+}
+
+#fashionprojects {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 70px;
+}
+
+.containerfashion {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 20px;
+}
+
+.fashion {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.contenitore-foto {
+  position: relative;
+  /* Assicura che l'elemento contenitore abbia una posizione definita */
+  overflow: hidden;
+  /* Nasconde eventuali overflow di contenuti interni */
+  margin-bottom: 20px;
+  /* Aggiunge spazio inferiore tra le immagini */
+}
+
+.contenitore-foto img {
+  display: flex;
+  /* Garantisce che l'immagine sia un blocco */
+  width: 100%;
+  /* Assicura che l'immagine riempia completamente il contenitore */
+  height: auto;
+  /* Altezza automatica rispetto alla larghezza per mantenere l'aspetto proporzionato */
+  transition: transform 0.3s ease;
+  /* Transizione fluida per l'effetto hover */
+}
+
+.contenitore-foto:hover img {
+  transform: scale(1.1);
+  /* Aumenta le dimensioni dell'immagine al passaggio del mouse */
 }
 
 .myfooter {
@@ -126,12 +219,13 @@ body {
   font-size: 10px;
   padding: 30px
 }
+
 .myfooter img {
   max-width: 3%;
   width: 5%;
   height: auto;
-  padding:10px;
-  
+  padding: 10px;
+
 }
 
 
@@ -142,7 +236,7 @@ body {
   gap: 20px;
   background-color: rgb(0, 0, 0);
 
- 
+
   align-items: center;
 }
 
@@ -163,7 +257,7 @@ body {
   align-items: space-between;
   justify-content: center;
   padding: 10px;
-  
+
 }
 
 .info p {
@@ -182,7 +276,8 @@ body {
   text-align: center;
   color: white;
 }
-.contatti  {
+
+.contatti {
   color: white;
   font-size: 15px;
   margin: 0 10px;
@@ -191,16 +286,19 @@ body {
   align-items: center;
   padding-top: 20px;
 }
+
 .contatti a {
-  color: inherit; /* Usa il colore del testo circostante */
-  text-decoration: none; /* Rimuove la sottolineatura */
+  color: inherit;
+  /* Usa il colore del testo circostante */
+  text-decoration: none;
+  /* Rimuove la sottolineatura */
   font-size: 20px;
   align-items: center;
 
 }
 
 .contatti:hover {
-color: rgb(218, 217, 217);
+  color: rgb(218, 217, 217);
 }
 
 .dovetrovarmi {
@@ -229,23 +327,10 @@ color: rgb(218, 217, 217);
 
 
 
-.containerfashion {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  padding: 20px;
-}
 
-.fashion {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-}
 
-#fashionprojects {
-  margin: 20px;
-  text-align: center;
-}
+
+
 
 #fname {
   background-color: #fff;
@@ -255,7 +340,7 @@ color: rgb(218, 217, 217);
   border-radius: 5px;
   font-size: 15px;
   position: static;
-  border-color:rgb(218, 217, 217);
+  border-color: rgb(218, 217, 217);
 }
 
 #fname:hover {
@@ -277,11 +362,11 @@ color: rgb(218, 217, 217);
   position: static;
   width: 100px;
   padding: 5px;
-  border-color:rgb(218, 217, 217);
+  border-color: rgb(218, 217, 217);
 }
 
 #submit:hover {
-  background-color:rgb(218, 217, 217);
+  background-color: rgb(218, 217, 217);
   color: #000000;
   border-radius: 5px;
   font-size: 12px;
@@ -297,7 +382,7 @@ color: rgb(218, 217, 217);
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
-  
+
 }
 
 #map {
@@ -315,25 +400,29 @@ color: rgb(218, 217, 217);
       align-items: center;
       text-align: center;
     }
-  
+
     .myheader img {
-      margin: 0; /* Rimuovi margini precedenti */
+      margin: 0;
+      /* Rimuovi margini precedenti */
     }
-  
+
     .nav-container {
       flex-direction: row;
       align-items: center;
       gap: 10px;
-      margin-left: 0; /* Rimuovi il margin-left precedentemente impostato */
+      margin-left: 0;
+      /* Rimuovi il margin-left precedentemente impostato */
     }
-  
+
     .btn {
-      width: 70%; /* Occupa tutta la larghezza disponibile */
+      width: 70%;
+      /* Occupa tutta la larghezza disponibile */
       padding: 10px;
-      color: inherit; /* Usa il colore del testo circostante */
+      color: inherit;
+      /* Usa il colore del testo circostante */
     }
   }
-  
+
 
   .btn:hover {
     background-color: rgb(218, 217, 217);
@@ -419,13 +508,14 @@ color: rgb(218, 217, 217);
     background-color: rgb(3, 3, 3);
     text-align: center;
     height: auto;
-    color:#ddd;
+    color: #ddd;
   }
+
   .myfooter img {
     max-width: 7%;
     width: 5%;
     height: auto;
-    padding:10px;
+    padding: 10px;
   }
 
   .info {
@@ -471,7 +561,7 @@ color: rgb(218, 217, 217);
     border-radius: 5px;
     font-size: 15px;
     position: static;
-    border-color:rgb(218, 217, 217);
+    border-color: rgb(218, 217, 217);
   }
 
   #submit {
@@ -623,38 +713,6 @@ color: rgb(218, 217, 217);
 
 }
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #010101;
-  color: white;
-  cursor: pointer;
-
-  font-size: 10px;
-}
-
-.button:hover {
-  background-color: rgb(218, 217, 217);
-}
-
-#popup2 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: #040404;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 3%;
-  height: 40%;
-  width: 40%;
-}
-
-.button {
-  margin-right: 10px;
-}
 
 #logofooter {
   width: 100px;
@@ -668,7 +726,7 @@ color: rgb(218, 217, 217);
   text-align: center;
   margin-top: 20px;
   color: white;
-  
+
 }
 
 #seguimi {
@@ -699,7 +757,7 @@ color: rgb(218, 217, 217);
 @media only screen and (max-width: 600px) {
 
   /* Modifica la dimensione del testo nell'intestazione per schermi più piccoli */
-  
+
   #seguimi {
     display: flex;
     flex-direction: column;
@@ -709,8 +767,9 @@ color: rgb(218, 217, 217);
     align-items: center;
     /* Centra le icone */
     padding: 20px;
-   
+
   }
+
   #seguimi h1 {
     font-size: 20px;
     text-align: center;
@@ -759,34 +818,6 @@ color: rgb(218, 217, 217);
   height: auto;
   margin-bottom: 10px;
   flex-direction: row;
-  }
-  
-  
-  
-
-.contenitore-foto {
-  position: relative;
-  /* Assicura che l'elemento contenitore abbia una posizione definita */
-  overflow: hidden;
-  /* Nasconde eventuali overflow di contenuti interni */
-  margin-bottom: 20px;
-  /* Aggiunge spazio inferiore tra le immagini */
-}
-
-.contenitore-foto img {
-  display: flex;
-  /* Garantisce che l'immagine sia un blocco */
-  width: 100%;
-  /* Assicura che l'immagine riempia completamente il contenitore */
-  height: auto;
-  /* Altezza automatica rispetto alla larghezza per mantenere l'aspetto proporzionato */
-  transition: transform 0.3s ease;
-  /* Transizione fluida per l'effetto hover */
-}
-
-.contenitore-foto:hover img {
-  transform: scale(1.1);
-  /* Aumenta le dimensioni dell'immagine al passaggio del mouse */
 }
 
 #email {
@@ -804,7 +835,7 @@ color: rgb(218, 217, 217);
   border-radius: 5px;
   font-size: 11px;
   position: static;
-  border-color:rgb(218, 217, 217);
+  border-color: rgb(218, 217, 217);
 }
 
 
@@ -818,11 +849,17 @@ color: rgb(218, 217, 217);
 }
 
 #iscriviti:hover {
-  background-color:rgb(218, 217, 217);
+  background-color: rgb(218, 217, 217);
   color: #000000;
 }
-.mySlides {display: none}
-img {vertical-align: middle;}
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -832,7 +869,8 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -852,18 +890,17 @@ img {vertical-align: middle;}
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-
-
 
 /* The dots/bullets/indicators */
 .dot {
@@ -877,7 +914,8 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -888,11 +926,57 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  /* Distribuisce gli elementi lungo la riga */
+  gap: 20px;
+  /* Spazio tra le caselle */
+  overflow-x: auto;
+  /* Per gestire lo scrolling orizzontale se le immagini superano la larghezza del contenitore */
+}
+
+.box {
+  flex: 0 0 auto;
+  /* Impedisce alle caselle di allungarsi */
+  width: 30%;
+  /* Larghezza della casella */
+  padding: 10px;
+  /* Spazio interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Ombra */
+  background-color: #f0f0f0;
+  /* Colore di sfondo */
+  text-align: center;
+  /* Centra l'immagine orizzontalmente */
+}
+
+.box img {
+  max-width: 100%;
+  /* Massima larghezza per l'immagine */
+  height: auto;
+  /* Altezza automatica */
+  display: block;
+  /* Rimuove lo spazio extra sotto l'immagine */
+  margin: 0 auto;
+  /* Centra l'immagine all'interno della casella */
 }
