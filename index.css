@@ -2,7 +2,7 @@
 
 body head header footer {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  
   
 }
 
@@ -77,7 +77,7 @@ body {
 
 
 .aboutme img {
-  width: 500px;
+  width: 200px;
   height: auto;
 }
 
@@ -406,34 +406,7 @@ body {
   align-items: flex-end;
 }
 
-  @media only screen and (max-width: 768px) {
-    .myheader {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .myheader img {
-      margin: 0;
-      /* Rimuovi margini precedenti */
-    }
-
-    .nav-container {
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
-      margin-left: 0;
-      /* Rimuovi il margin-left precedentemente impostato */
-    }
-
-    .btn {
-      width: 70%;
-      /* Occupa tutta la larghezza disponibile */
-      padding: 10px;
-      color: inherit;
-      /* Usa il colore del testo circostante */
-    }
-  }
+  
 
 
   .btn:hover {
@@ -645,66 +618,6 @@ body {
 }
 
 /* Stile per schermi piccoli */
-@media only screen and (max-width: 600px) {
-  .popup {
-    display: none;
-    /* Nascondi il popup per impostazione predefinita */
-    position: fixed;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-    height: 80%;
-    color: white
-      /*testo bianco*/
-    ;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .popup-content {
-    background-color: rgb(9, 9, 9);
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    position: relative;
-
-  }
-
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  .info {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    font-size: 10px;
-    text-align: center
-  }
-
-  .info h1 {
-    color: gray;
-    font-size: 20px;
-    flex-direction: column;
-    align-items: center;
-
-
-  }
-}
 
 #popup:hover {
   background-color: rgb(218, 217, 217);
@@ -757,63 +670,7 @@ body {
 }
 
 /* Media Query per schermi di dimensioni più piccole */
-@media only screen and (max-width: 600px) {
 
-  /* Modifica la dimensione del testo nell'intestazione per schermi più piccoli */
-
-  #seguimi {
-    display: flex;
-    flex-direction: column;
-    /* Disposizione in colonna per schermi più piccoli */
-    gap: 20px;
-    /* Riduce il gap tra le icone */
-    align-items: center;
-    /* Centra le icone */
-    padding: 20px;
-
-  }
-
-  #seguimi h1 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  /* Modifica la disposizione delle icone per schermi più piccoli */
-  .social {
-    display: flex;
-    flex-direction: row;
-    /* Disposizione in colonna per schermi piccoli */
-    gap: 20px;
-    /* Riduce il gap tra le icone */
-    align-items: center;
-    /* Centra le icone */
-    padding: 20px;
-  }
-
-  /* Modifica la dimensione delle icone per schermi più piccoli */
-  .social a {
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    /* Riduce la dimensione delle icone */
-    align-items: center;
-    /* Centra le icone */
-  }
-
-  #iscriviti {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #fbfbfb;
-    color: rgb(1, 1, 1);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  #iscriviti:hover {
-    background-color: rgb(167, 43, 167);
-    color: #ddd;
-  }
-}
 
 #foto {
   width: 100%;
@@ -942,7 +799,7 @@ img {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 480px) {
 
   .prev,
   .next,
@@ -1054,43 +911,95 @@ img {
   font-weight: bold;
   
 }
-@media only screen and (max-width: 768px) {
-  
-  .myheader {display: flex;
+@media only screen and (max-width: 480px) {
+  #seguimi {
+    display: flex;
+    flex-direction: column;
+    /* Disposizione in colonna per schermi più piccoli */
+    gap: 20px;
+    /* Riduce il gap tra le icone */
+    align-items: center;
+    /* Centra le icone */
+    padding: 20px;
+
+  }
+
+  #seguimi h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Modifica la disposizione delle icone per schermi più piccoli */
+  .social {
+    display: flex;
+    flex-direction: row;
+    /* Disposizione in colonna per schermi piccoli */
+    gap: 20px;
+    /* Riduce il gap tra le icone */
+    align-items: center;
+    /* Centra le icone */
+    padding: 20px;
+  }
+
+  /* Modifica la dimensione delle icone per schermi più piccoli */
+  .social a {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    /* Riduce la dimensione delle icone */
+    align-items: center;
+    /* Centra le icone */
+  }
+
+  #iscriviti {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fbfbfb;
+    color: rgb(1, 1, 1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #iscriviti:hover {
+    background-color: rgb(167, 43, 167);
+    color: #ddd;
+  }
+  .myheader {
+   display: flex;
    justify-content: left;
-   gap: 300px;
+   gap: 20px;
    text-align: center;
-   padding: 10px;
+   padding: 5px;
    background-color: rgb(253, 253, 253);
-   width: 100%;
+   width: 350px;
    z-index: 1000;
    /* Assicura che l'header rimanga sopra altri contenuti */
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    /* Aggiunge un'ombra per separare visivamente l'header dal contenuto */
+   
+   
     }
 
-  .myheader img {
-    margin: 0;
-  }
+  
 
   .nav-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
     margin-left: 0;
   }
 
   .btn {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
+    width: 70%;
+    font-size: 10px;
   }
 
   .aboutme {
-    padding-left: 10px;
-    padding-right: 10px;
+   
+    padding-right: 1px;
     height: auto;
     text-align: center;
+   width: 100%;
   }
 
   .aboutme img {
@@ -1124,6 +1033,7 @@ img {
     max-width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 10px;
   }
 
   .fine {
@@ -1189,4 +1099,95 @@ img {
     flex-direction: column;
     gap: 10px;
   }
+  .popup {
+    display: none;
+    /* Nascondi il popup per impostazione predefinita */
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 80%;
+    color: white
+      /*testo bianco*/
+    ;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content {
+    background-color: rgb(9, 9, 9);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    font-size: 10px;
+    text-align: center
+  }
+
+  .info h1 {
+    color: gray;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+  
+   
+
+  .myheader img {
+    width: 30px;
+    height: auto;
+    margin: 10px;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+    /* Rimuovi il margin-left precedentemente impostato */
+  }
+
+  .btn {
+    display: flex;
+    font-size: 10px;
+    /* Occupa tutta la larghezza disponibile */
+    padding: 5px;
+    color: inherit;
+    /* Usa il colore del testo circostante */
+    gap: 10px;
+    text-align: center;
+  }
+  .moda-header h1 {
+    font-size: 20px;
+  }
+  body head header footer {
+    margin-left: 10px;
+    max-resolution: 10px;
 }
