@@ -697,7 +697,7 @@ body {
   }
 
   .info h1 {
-    color: rgb(252, 252, 252);
+    color: gray;
     font-size: 20px;
     flex-direction: column;
     align-items: center;
@@ -1159,7 +1159,7 @@ img {
   }
 
   #submit {
-    margin-left: 0;
+    margin-left: 100;
   }
 
   .moda-item {
