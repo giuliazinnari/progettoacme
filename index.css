@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
-  background: white;
+body head header footer {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  margin: 0%;
+  
 }
 
 .myheader {
@@ -163,25 +162,22 @@ body {
   margin-right: 10px;
 }
 
-#fashionprojects {
-  margin-right: 20px;
-  margin-left: 20px;
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 70px;
-}
+
 
 .containerfashion {
   display: flex;
   flex-direction: column;
   gap: 60px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .fashion {
   display: flex;
   flex-direction: row;
+  
   gap: 60px;
+
 }
 
 .contenitore-foto {
@@ -251,7 +247,7 @@ body {
   flex-direction: row;
   gap: 100px;
   background-color: black;
-  color: white;
+  color: gray;
   font-size: 13px;
   text-align: center;
   align-items: space-between;
@@ -261,25 +257,27 @@ body {
 }
 
 .info p {
-  color: rgb(252, 252, 252);
+  color: gray;
   font-family: 'Roboto', sans-serif;
 }
 
 .info h1 {
-  color: rgb(252, 252, 252);
+  color: gray;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 20px;
 }
 
 .contattami {
   display: flex;
   align-items: center;
   text-align: center;
-  color: white;
+  color:gray;
 }
 
 .contatti {
-  color: white;
-  font-size: 15px;
+  color: rgb(250, 248, 248);
+  font-size: 16px;
   margin: 0 10px;
   display: inline-block;
   text-align: center;
@@ -307,7 +305,7 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 20px;
-  color: white;
+  color: gray;
   flex-direction: row;
   margin-right: 20px;
   padding: 20px;
@@ -319,18 +317,11 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 20px;
-  color: white;
+  color: gray;
   flex-direction: row;
   margin-right: 20px;
   padding: 20px;
 }
-
-
-
-
-
-
-
 
 #fname {
   background-color: #fff;
@@ -363,6 +354,7 @@ body {
   width: 100px;
   padding: 5px;
   border-color: rgb(218, 217, 217);
+  
 }
 
 #submit:hover {
@@ -382,6 +374,15 @@ body {
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
+  background: linear-gradient(135deg, #fffffff6 0%, #b5b5b5 100%); /* Sfumatura */
+  
+  box-shadow: 0 4px 8px rgba(130, 130, 130, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Effetto rilievo */
+  max-width: 600px; /* Larghezza massima */
+  color: #333;
+  border: 10px solid #f0f0f0;
+  margin-left: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
 }
 
@@ -747,6 +748,9 @@ body {
   margin: 0 10px;
   display: inline-block;
 }
+.social a i {
+  font-size: 20px; /* Imposta la dimensione delle icone */
+}
 
 .social a:hover {
   color: rgb(218, 217, 217);
@@ -979,4 +983,72 @@ img {
   /* Rimuove lo spazio extra sotto l'immagine */
   margin: 0 auto;
   /* Centra l'immagine all'interno della casella */
+}
+
+
+
+
+/* Stili per l'header */
+.moda-header {
+  background: radial-gradient(circle at center, #f8f6f6f6 0%, #f0f0f0 100%); 
+  color: rgb(1, 1, 1);
+  text-align: center;
+  padding: 20px 0;
+  
+}
+
+.moda-header h1 {
+  margin: 0;
+}
+
+/* Stili per la galleria */
+.moda-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+ 
+}
+
+/* Stili per le singole card */
+.moda-item {
+  width: 300px; /* Dimensione delle card */
+  margin-bottom: 20px;
+  margin-right: 20px; /* Margine a destra */
+  margin-left: 20px; /* Margine a sinistra */
+}
+
+
+.moda-card {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+}
+.moda-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  border-color:  #f0f0f0;
+}
+.moda-card img {
+  width: 300px;
+  height: auto;
+}
+
+.moda-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.moda-card-text {
+  padding: 16px;
+  text-align: center;
+}
+
+.moda-card-text h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  
 }

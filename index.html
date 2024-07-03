@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="index.css">
   <title>Giulia Zinnari</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body>
+<header>
   <header class="myheader">
     <img src="/img/GIULIA ZINNARI (3).png" alt="Logo" class="logo">
     <div class="nav-container">
@@ -19,7 +20,8 @@
       <button type="button" class="btn" onclick="scrollToSection('fashion-projects')">Fashion projects</button>
       <button type="button" class="btn" onclick="scrollToSection('info')">Contacts</button>
     </div>
-  </header>
+</header>
+<body>
   <div class="aboutme">
     <div id="about-me" class="section"></div>
     <img src="/img/image.png" alt="aboutme">
@@ -53,61 +55,130 @@
       }
     }
   </script>
+  <div id="fashionprojects">
+  <div id="fashion-projects" class="section"> </div>
+   <div class="moda-header">
+    <h1>Fashion Projects</h1>
+   </div>
+  
+   <div class="moda-gallery">
+    <div class="moda-item">
+      <div class="moda-card">
+        <img src="download (70).jpeg">
+        <div class="moda-card-text">
+          <h5>5 Terre</h5>
+        </div>
+      </div>
+    </div>
+  
+    <div class="moda-item">
+      <div class="moda-card">
+        <img src="download (70).jpeg">
+        <div class="moda-card-text">
+          <h5>Monterosso</h5>
+        </div>
+      </div>
+    </div>
+  
+    <div class="moda-item">
+      <div class="moda-card">
+        <img src="download (70).jpeg">
+        <div class="moda-card-text">
+          <h5>Vernazza</h5>
+        </div>
+      </div>
+    </div>
+   </div>
+  
+   <div class="moda-gallery">
+    <div class="moda-item">
+      <div class="moda-card">
+        <img src="download (70).jpeg">
+        <div class="moda-card-text">
+          <h5>Manarola</h5>
+        </div>
+      </div>
+    </div>
+  
+    <div class="moda-item">
+      <div class="moda-card">
+        <img src="download (70).jpeg">
+        <div class="moda-card-text">
+          <h5>Corniglia</h5>
+        </div>
+      </div>
+    </div>
+  
+    <div class="moda-item">
+      <div class="moda-card">
+        <img src="download (70).jpeg">
+        <div class="moda-card-text">
+          <h5>Riomaggiore</h5>
+        </div>
+      </div>
+    </div>
+   </div>
+  
 
-<div id="fashionprojects">
-    <div id="fashion-projects" class="section"> </div>
-    <h1>Fashion Projects </h1>
+    
 
 
 
-    <div class="containerfashion">
-      <div class="fashion">
-        <div class="contenitore-fotos">
+   <div class="moda-header">
+    <h1>Fashion Projects</h1>
+   </div>
+   <div class="containerfashion">
+    <div class="fashion">
+   
+      <div class="progetto">
+       <p>Qui ci sono i miei progetti sulla moda, scorri a destra per vedere le altre immagini
+        
+       </p>
+      </div>
+    <div class="contenitore-fotos">
 
 
-  <div class="slideshow-container">
+   <div class="slideshow-container">
 
-  <div class="mySlides fade">
+   <div class="mySlides fade">
     
     <img src="carte.png" class="slider-img" id="foto">
     
-  </div>
+   </div>
   
-  <div class="mySlides fade">
+   <div class="mySlides fade">
     
     <img src="Binder1_Pagina_1.jpg" class="slider-img" id="foto">
   
-  </div>
+   </div>
   
-  <div class="mySlides fade">
+   <div class="mySlides fade">
     
     <img src="Binder1_Pagina_2.jpg" class="slider-img" id="foto">
    
-  </div>
+   </div>
   
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+   <a class="prev" onclick="plusSlides(-1)">❮</a>
+   <a class="next" onclick="plusSlides(1)">❯</a>
   
-  </div>
-  <br>
+   </div>
+   <br>
   
-  <div style="text-align:center">
+   <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span> 
     <span class="dot" onclick="currentSlide(2)"></span> 
     <span class="dot" onclick="currentSlide(3)"></span> 
-  </div>
+   </div>
+    
   
          
-        </div>
-        <div class="progetto">
-          <h1>PROGETTO 1</h1>
-          <p>Qui ci sono i miei progetti sulla moda, scorri a destra per vedere le altre immagini
-            
-          </p>
-        </div>
-      </div>
- <div class="fashion reverse">
-   <div class="progetto">
+   </div>
+   </div>
+   <div class="moda-header">
+    <h1>Fashion Projects</h1>
+   </div>
+   <div class="fashion reverse">
+    <div class="progetto">
           <h2>PROGETTO 2</h2> 
           <p>Qui ci sono i miei progetti sulla moda, scorri a destra per vedere le altre immagini
                     
@@ -124,85 +195,13 @@
           <div class="box">
             <img src="Heliot Emil SS24 backstage.jpeg" alt="Foto 3">
           </div>
-        </div>
-        </div>
-        </div>
+       </div>
+       </div>
    </div>
-
- <div class="fashion">
-        <div class="contenitore-fotos">
+ </div>
 
 
-          <div class="slideshow-container">
-        
-          <div class="mySlides fade">
-            
-            <img src="download (70).jpeg" class="slider-img" id="foto">
-            
-          </div>
-          
-          <div class="mySlides fade">
-            
-            <img src="download (70).jpeg" class="slider-img" id="foto">
-          
-          </div>
-          
-          <div class="mySlides fade">
-            
-            <img src="download (70).jpeg" class="slider-img" id="foto">
-           
-          </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-          
-          </div>
-          <br>
-          
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-          </div>
-          
-                 
-      </div>
-  <div class="progetto">
-                  <h1>PROGETTO 3</h1>
-                  <p>Qui ci sono i miei progetti sulla moda, scorri a destra per vedere le altre immagini
-                    
-                  </p>
-                </div>
-              </div>
-      
- <div class="fashion reverse">
-  <div class="progetto">
-         <h2>PROGETTO 4</h2> 
-         <p>Qui ci sono i miei progetti sulla moda, scorri a destra per vedere le altre immagini
-                    
-         </p>
-   </div>
-       <div class="contenitore-foto ">
-       <div class="row">
-         <div class="box">
-           <img src="by me.jpeg" alt="Foto 1">
-         </div>
-         <div class="box">
-           <img src="by me.jpeg" alt="Foto 2">
-         </div>
-         <div class="box">
-           <img src="by me.jpeg" alt="Foto 3">
-         </div>
-       </div>
-       </div>
-       </div>
-  </div>
-
-    </div>
-  </div>
-  </div>
-
-<div id="newsletterPopup" class="popup">
+ <div id="newsletterPopup" class="popup">
   <div class="popup-content">
     <span class="close-btn">&times;</span>
      <h1>  RIMANI SEMPRE AGGIORNATO </h1>
@@ -210,7 +209,7 @@
       <p>Scrivi qui la tua E-mail:</p>
 
 
-      <input type="text" id="email" name="email" value="Enter e-mail adress" required>
+      <input type="text" id="email" name="email" placeholder="Enter email address" required>
 
 
       
@@ -218,13 +217,13 @@
 
     </form>
   </div>
-</div>
-<div class="info" id="info">
+ </div>
+ <div class="info" id="info">
   
   <div class="dove trovarmi">
     <h1>DOVE TROVARMI </h1>
-  <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44780.69251681886!2d8.574581405615781!3d45.45382159461326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47865a204242336d%3A0x4d210e35fa2980f0!2s28100%20Novara%20NO!5e0!3m2!1sit!2sit!4v1716819509013!5m2!1sit!2sit" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- </div>
+   <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44780.69251681886!2d8.574581405615781!3d45.45382159461326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47865a204242336d%3A0x4d210e35fa2980f0!2s28100%20Novara%20NO!5e0!3m2!1sit!2sit!4v1716819509013!5m2!1sit!2sit" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 
 
   <div id="SEGUIMI">  
@@ -240,7 +239,7 @@
   <i class="fa-brands fa-tiktok"></i>
   </a>
  </div>
-</div>
+ </div>
  <div class="Contattami">
   <h1>CONTATTAMI</h1>
   <div class="contatti">
@@ -253,7 +252,7 @@
   <i class="fa-solid fa-phone"></i> 
   </div>
   <p> 335 456 7890</p>
-</div>
+ </div>
 
   <div id="form">
     <form action="/action.php" target="_blank">
@@ -261,17 +260,18 @@
     <h2>Scrivi qui la tua email 
       per rimanere sempre aggiornato.</h2>
     
-    <input type="text" id="fname" name="fname" value="Enter e-mail adress  "><br>
+    <input type="text" id="fname" name="fname" placeholder="Enter email address"> 
     
     <input type="submit" id="submit" value="SUBSCRIBE">
     
     </form>
-    </div>
+  </div>
 </div>
-</div>
+</body>
 
+<footer>
   <div class="myfooter"> 
-    <footer>
+  
       <img src="/img/GIULIA ZINNARI (4).png" id="logofooter" alt="Logofooter" class="logofooter">
     <p>&copy; 2024 Giulia Zinnari Tutti i diritti riservati.</p>
     <p><a href="mailto:giuly.zinnari@libero.it ">Contacts </a> | <a href="#">Privacy Policy</a></p>
