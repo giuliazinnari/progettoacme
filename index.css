@@ -1202,6 +1202,10 @@ img {
 {
   margin-bottom: 20px;
 }
+.Contattami p 
+{color: inherit;
+}
+
 
 #form {
  margin-top: 10px;
