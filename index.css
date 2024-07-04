@@ -16,7 +16,7 @@ body {
   justify-content: left;
   gap: 300px;
   text-align: center;
-  padding: 10px;
+  
   background-color: rgb(253, 253, 253);
   width: 100%;
   z-index: 1000;
@@ -58,18 +58,11 @@ body {
 }
 
 .aboutme {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex-direction: column;
+  
   background-color: black;
   color: white;
   /* Modifica il colore del testo */
-  height: 100vh;
-  /* per centrare verticalmente */
-  padding-left: 100px;
-  padding-right: 100px;
+ 
 }
 
 
@@ -115,8 +108,9 @@ body {
   background-color: #010101;
   color: white;
   cursor: pointer;
-
-  font-size: 10px;
+  transition: background-color 0.3s;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .button:hover {
@@ -147,13 +141,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  margin-bottom: 20px;
+  
 }
 
 .fashion {
   display: flex;
   flex-direction: row;
-  padding-left: 30px;
+  padding-left: 60px;
   padding-right: 90px;
   gap: 120px;
   align-items: center;
@@ -161,18 +155,22 @@ body {
   margin-right: 20px;
   margin-left: 20px;
 
+  margin-bottom: 20px;
+
 }
+
 
 .contenitore-foto {
   position: relative;
   /* Assicura che l'elemento contenitore abbia una posizione definita */
   overflow: hidden;
   /* Nasconde eventuali overflow di contenuti interni */
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   /* Aggiunge spazio inferiore tra le immagini */
   margin-right: 30px;
   align-items: center;
-  
+  padding-top: 60px;
+  padding-bottom: 60px;
   height: auto;
 
   
@@ -194,6 +192,7 @@ body {
   align-items: center; /* Centra verticalmente */
   text-align: center; /* Allinea il testo al centro (non necessario per le immagini ma può essere utile per il contenuto testuale) */
   padding-bottom: 100px;
+  padding-top: 200px;
   margin: 0 auto; /* Per centrare il contenitore .fine nella pagina */
 }
 
@@ -219,6 +218,7 @@ body {
   flex-direction: column;
   gap: 20px;
   background-color: #f0f0f0;
+  margin-right: 20px;
 
 
   align-items: center;
@@ -233,13 +233,14 @@ body {
 .info {
   display: flex;
   flex-direction: row;
-  gap: 200px;
+  gap: 100px;
   background-color: #f0f0f0;
   color: gray;
   font-size: 13px;
   text-align: center;
   justify-content: center;
-  padding: 10px;
+  padding: 30px;
+ 
 
 }
 
@@ -284,14 +285,14 @@ body {
   
   .dovetrovarmi {
     display: flex;
-    gap: 100px;
+    gap: 9px;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
     color: gray;
-    flex-direction: row;
+    flex-direction: column;
     margin-right: 20px;
-    padding: 20px;
+    padding: 0px;
   }
   
   #seguimi {
@@ -377,6 +378,7 @@ body {
 
 }
 
+
 #map {
   width: 80%;
   height: auto;
@@ -385,11 +387,7 @@ body {
   align-items: flex-end;
 }
 @media only screen and (max-width: 768px) {
-  .myheader {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+  
 
   .myheader img {
     margin: 0;
@@ -437,15 +435,14 @@ body {
 .aboutme {
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   margin-top: 10px;
-  padding-right: 10px;
-  padding-left: 0px;
-  width: 100%;
-  height: auto;
+  
+  
+  
   display: flex;
 
 }
@@ -670,6 +667,7 @@ body {
     font-size: 20px;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 
 
   }
@@ -964,6 +962,7 @@ img {
   
 }
 
+
 .moda-header h1 {
   margin: 0;
 }
@@ -1023,15 +1022,17 @@ img {
   
   .myheader {display: flex;
    justify-content: left;
-   gap: 300px;
-   text-align: center;
-   padding: 10px;
+   gap: 30px;
+   
+   
    background-color: rgb(253, 253, 253);
    width: 100%;
-   z-index: 1000;
-   /* Assicura che l'header rimanga sopra altri contenuti */
+   
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    /* Aggiunge un'ombra per separare visivamente l'header dal contenuto */
+   flex-direction: column;
+   align-items: center;
+   
     }
 
   .myheader img {
@@ -1052,8 +1053,7 @@ img {
   }
 
   .aboutme {
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 100%;
     height: auto;
     text-align: center;
   }
@@ -1101,7 +1101,9 @@ img {
     align-items: center;
     gap: 10px;
     padding: 10px;
+  
   }
+ 
 
   .dovetrovarmi {
     flex-direction: column;
