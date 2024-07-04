@@ -76,6 +76,9 @@ body {
   font-size: 20px;
   text-align: left;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  
+  font-style: italic;
 
 }
 .btn {
@@ -1160,4 +1163,70 @@ img {
     flex-direction: column;
     gap: 10px;
   }
+}
+@media only screen and (max-width: 480px)
+{
+  .moda-header h1 {
+    font-size: 20px;
+  }
+  .button  {
+    font-size: 10px;
+  
+}
+.btn {
+  font-style: italic;
+  background-color: #ffffff;
+  text-decoration: underline;
+  border-bottom: #020202;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom:20px ;
+}
+.aboutme p {
+  font-style: italic;
+  font-weight: lighter;
+  
+  font-size: 14px;
+  font-weight: no;
+}
+.info h1 {
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  
+  font-size: 11px;
+}
+.social  {
+  margin-top: 0px;
+}
+.Contattami h1
+{
+  margin-bottom: 20px;
+}
+
+#form {
+ margin-top: 10px;
+ margin-right: 0px;
+ 
+}
+#form h1
+{
+  padding-left: 10px;
+  
+}
+#form h2
+{ font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+}
+.info h1{ 
+  font-weight: lighter;
+
+}
+.myfooter {
+  padding: 8px;
+  font-size: 7px;
+}
+#submit {
+  margin-left: 100px;
+}
 }
