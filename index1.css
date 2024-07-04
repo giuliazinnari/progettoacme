@@ -13,8 +13,10 @@ body {
 
 .myheader {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
+  gap: 300px;
   text-align: center;
+  
   background-color: rgb(253, 253, 253);
   width: 100%;
   z-index: 1000;
@@ -25,13 +27,15 @@ body {
 .myheader img {
   width: 50px;
   height: auto;
-  margin-left: 1%;
+  margin-right: 40px;
+  margin-left: 20px;
 }
 .nav-container {
   display: flex;
   gap: 66px;
   /* Aggiunge spazio tra i pulsanti */
   align-items: center;
+  margin-left: 266px;
   /* Centra i pulsanti */
  
 }
@@ -146,11 +150,13 @@ body {
 .fashion {
   display: flex;
   flex-direction: row;
-  padding: 5%;
-  gap: 5%;
+  padding-left: 60px;
+  padding-right: 90px;
+  gap: 120px;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin-right: 20px;
+  margin-left: 20px;
 
   margin-bottom: 20px;
 
@@ -162,10 +168,12 @@ body {
   /* Assicura che l'elemento contenitore abbia una posizione definita */
   overflow: hidden;
   /* Nasconde eventuali overflow di contenuti interni */
-  
+  margin-bottom: 30px;
+  /* Aggiunge spazio inferiore tra le immagini */
+  margin-right: 30px;
   align-items: center;
   padding-top: 60px;
-  
+  padding-bottom: 60px;
   height: auto;
 
   
@@ -186,8 +194,8 @@ body {
   justify-content: center; /* Centra orizzontalmente */
   align-items: center; /* Centra verticalmente */
   text-align: center; /* Allinea il testo al centro (non necessario per le immagini ma può essere utile per il contenuto testuale) */
-  padding-bottom: 2%;
-  padding-top: 2%;
+  padding-bottom: 100px;
+  padding-top: 200px;
   margin: 0 auto; /* Per centrare il contenitore .fine nella pagina */
 }
 
@@ -228,7 +236,7 @@ body {
 .info {
   display: flex;
   flex-direction: row;
-  gap: 2%;
+  gap: 100px;
   background-color: #f0f0f0;
   color: gray;
   font-size: 13px;
@@ -350,8 +358,8 @@ body {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 70px;
+  padding-right: 70px;
   background: linear-gradient(135deg, #fffffff6 0%, #b5b5b5 100%); /* Sfumatura */
   font-size: 12px;
   box-shadow: 0 4px 8px rgba(130, 130, 130, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
@@ -360,8 +368,8 @@ body {
   height: auto; /* Altezza automatica */
   color: #333;
   border: 10px solid #f0f0f0;
-  margin: auto;
- 
+  margin-left: 65px;
+  margin-right: 57px;
   
   padding-top: 15px;
   padding-bottom: 15px;
@@ -376,7 +384,7 @@ body {
   border-radius: 25px;
   align-items: flex-end;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 768px) {
   
 
   .myheader img {
@@ -1008,7 +1016,7 @@ img {
   font-weight: bold;
   
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 768px) {
   
   .myheader {display: flex;
    justify-content: left;
