@@ -90,7 +90,7 @@ Per realizzare il progetto, sono stati utilizzati i seguenti strumenti e risorse
 
 Visual Studio Code: Editor di codice
 
-Font personalizzatO
+Font personalizzato
 
 Codepen.io: Strumento per test e prototipazione del codice
 
