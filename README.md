@@ -18,7 +18,7 @@ Il sito web creato può essere visitato al seguente indirizzo:  https://giuliazi
 
 # SCOPO DEL REPOSITORY
 
-Realizzazione di un sito web monopagina per rappresentare la brand identity personale di Giulia Zinnari.
+Realizzazione di un sito web monopagina per rappresentare la brand identity personale di Giulia Zinnari nell'ambito fashion.
 
 # LAYOUT DELLA PAGINA
 
