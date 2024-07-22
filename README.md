@@ -12,8 +12,6 @@ Indirizzo: Web Design
 
 Professore: Matteo Baccan
 
-Corso: Web Design, ACME Novara
-
 # LINK DEL PROGETTO
 
 Il sito web creato può essere visitato al seguente indirizzo:  https://giuliazinnari-brandidentity.netlify.app/
